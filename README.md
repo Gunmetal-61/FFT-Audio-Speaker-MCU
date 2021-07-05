@@ -21,7 +21,7 @@ A custom bluetooth speaker project conceived from an FFT mini-project.  This MCU
    - [ForceTronics: Advanced Configuration of the SAMD21 ADC](#forcetronics-advanced-configuration-of-the-samd21-adc)
 7. [Schematic Diagram](#7-Schematic-Diagram)
 8. [References](#8-References)
-   - [Source Code/Hardware Inspiration](#source-code/hardware-inspiration)
+   - [Source Code/Hardware Inspiration](#source-codehardware-inspiration)
    - [Documentation](#documentation)
    - [Technical Guides](#technical-guides)
    - [Theory](#theory)
@@ -123,7 +123,7 @@ Depending on the bit resolution the ADC is set at (8, 10, or 12 bits), each anal
 
 Doing this is very simple with the ATMega328P on an Nano, but is a much more involved process on a SAMD21 the MKR Zero has.  I followed the videos and code provided by a guide found [here](https://forcetronic.blogspot.com/2018/06/speeding-up-adc-on-arduino-samd21.html).
 
-Please refer to the [Source Code/Hardware Inspiration](#source-code/hardware-inspiration), [Documentation](#documentation), and [Technical Guides](#technical-guides) section found at the bottom of this README in [8. References](#8-References).
+Please refer to the [Source Code/Hardware Inspiration](#source-codehardware-inspiration), [Documentation](#documentation), and [Technical Guides](#technical-guides) section found at the bottom of this README in [8. References](#8-References).
 
 <br />
 
@@ -181,4 +181,4 @@ As the MKR Zero is all 3.3V logic, connect the wire which links 5V to the **disp
 
 <br />
 
-_Last Updated: 2021.07.04 23:13 PST_
+_Last Updated: 2021.07.04 23:18 PST_
