@@ -17,15 +17,15 @@ A custom bluetooth speaker project conceived from an FFT mini-project.  This MCU
    - [Hardware](#Hardware)
    - [Software](#Software)
 6. [Derived Sources](#6-Derived-Sources)
-   - [shajeebtm's 32-Band Audio Visualizer Arduino Project](#shajeebtm's-32-Band-Audio-Visualizer-Arduino-Project)
-   - [ForceTronics: Advanced Configuration of the SAMD21 ADC](#ForceTronics:-Advanced-Configuration-of-the-SAMD21-ADC)
+   - [shajeebtm's 32-Band Audio Visualizer Arduino Project](#shajeebtms-32-band-audio-visualizer-arduino-project)
+   - [ForceTronics: Advanced Configuration of the SAMD21 ADC](#forcetronics-advanced-configuration-of-the-samd21-adc)
 7. [Schematic Diagram](#7-Schematic-Diagram)
 8. [References](#8-References)
-   - [Source Code/Hardware Inspiration](#Source-Code/Hardware-Inspiration)
-   - [Documentation](#Documentation)
-   - [Technical Guides](#Technical-Guides)
-   - [Theory](#Theory)
-   - [Other](#Other)
+   - [Source Code/Hardware Inspiration](#source-code/hardware-inspiration)
+   - [Documentation](#documentation)
+   - [Technical Guides](#technical-guides)
+   - [Theory](#theory)
+   - [Other](#other)
 
 <br />
 
@@ -123,7 +123,7 @@ Depending on the bit resolution the ADC is set at (8, 10, or 12 bits), each anal
 
 Doing this is very simple with the ATMega328P on an Nano, but is a much more involved process on a SAMD21 the MKR Zero has.  I followed the videos and code provided by a guide found [here](https://forcetronic.blogspot.com/2018/06/speeding-up-adc-on-arduino-samd21.html).
 
-Please refer to the [Source Code/Hardware Inspiration](#Source-Code/Hardware-Inspiration), [Documentation](#Documentation), and [Technical Guides](#Technical-Guides) section found at the bottom of this README in [8. References](#8-References).
+Please refer to the [Source Code/Hardware Inspiration](#source-code/hardware-inspiration), [Documentation](#documentation), and [Technical Guides](#technical-guides) section found at the bottom of this README in [8. References](#8-References).
 
 <br />
 
