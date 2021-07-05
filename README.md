@@ -8,7 +8,7 @@ A custom bluetooth speaker project conceived from an FFT mini-project.  This MCU
 
 ![alt-text](https://github.com/Gunmetal-61/FFT-Audio-Speaker-MCU/blob/gh-pages/images/IMG_1381.jpeg)
 
-[testgif](https://imgur.com/S55DTST)
+[tdestgif](https://github.com/Gunmetal-61/FFT-Audio-Speaker-MCU/blob/gh-pages/video/5fgy1q.gif)
 
 
 
