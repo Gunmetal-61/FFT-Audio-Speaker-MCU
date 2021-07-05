@@ -39,7 +39,7 @@ This repository contains the microcontroller version of what I hope to eventuall
 
 <a href="Board Overall View"><img src="https://github.com/Gunmetal-61/FFT-Audio-Speaker-MCU/blob/gh-pages/images/IMG_1381.jpeg" align="center"></a>
 
-_The prototype board as of 07.03.2021._
+_The prototype board as of 07.03.2021.  The device with the larger screen cut off at the top of the frame is an [Arduino Mega 2560-based Oscilloscope](https://create.arduino.cc/projecthub/wayri/arduino-oscilloscope-84b2ac)_
 
 <br />
 
@@ -181,4 +181,4 @@ As the MKR Zero is all 3.3V logic, connect the wire which links 5V to the **disp
 
 <br />
 
-_Last Updated: 2021.07.04 23:11 PST_
+_Last Updated: 2021.07.04 23:13 PST_
