@@ -1,5 +1,7 @@
-### As of 2021/07/02:  
-**This project has a working implementation of an (FFT-powered) audio spectrum analyzer with direct input from a 3.5mm jack.  Currently assembling amplifier and speaker components to begin the audible part of the project.**
+### As of 2021/07/14:  
+**This project has a working implementation of an (FFT-powered) audio spectrum analyzer with direct input from a 3.5mm jack.  Compared to pictures below, I have added loudspeaker hardware (two 3W 4-Ohm stereo dynamic drivers, MAX98306 3.7W stereo amplifier) in order to turn this into a full-fledged Hi-Fi speaker.  Currently working on isolating source of noise issues and working on a solution with a combination of better low-pass filtering, external discrete ADC, cleaner power, and improved wire routing.**
+
+**Please refer to the [project board](https://github.com/users/Gunmetal-61/projects/1).**
 
 # FFT-Audio-Speaker-MCU
 A custom bluetooth speaker project conceived from an FFT mini-project.  This MCU version serves as a test bed for the [FPGA version](https://github.com/Gunmetal-61/FFT-Audio-Speaker-FPGA).
@@ -54,7 +56,7 @@ _The prototype board as of 07.03.2021.  The device with the larger screen cut of
 
 ## 3. Future Changes and Additions
 
-The wireless speaker and UI portions of the code have yet to be added.  Additionally, it is a long ways off, but I am already beginning to sketch designs and choose final hardware for a polished, custom-PCB-and-enclosure version of this project.
+The wireless functionality and UI portions of the code have yet to be added.  Loudspeaker functionality is being worked on.  Additionally, it is a long ways off, but I am already beginning to sketch designs and choose final hardware for a polished, custom PCB and accoustically-optimized enclosure version of this project.
 
 Please look at the [project board](https://github.com/users/Gunmetal-61/projects/1) for a more accurate day-to-day view of current issues and features being worked on.
 
@@ -62,7 +64,7 @@ Please look at the [project board](https://github.com/users/Gunmetal-61/projects
 
 ## 4. Issues
 
-Right now, the project contains a functioning audio spectrum visualizer, but parameters to adjust the view can only be tweaked in source code.  Additionally, the spectrum graph shows varying amounts of "noise" depending on how clean the audio signal and power source are.  This has yet to be fully resolved and may not be possible without reconfiguration and addition of more hardware (decoupling capacitors have already been added).
+Right now, the project contains a functioning audio spectrum visualizer, but parameters to adjust the view can only be tweaked in source code.  Additionally, the spectrum graph and speakers show varying amounts of "noise" depending on how clean the audio signal and power source are.  This has yet to be fully resolved and may not be possible without reconfiguration and addition of more hardware (decoupling capacitors have already been added).
 
 Please look at the [project board](https://github.com/users/Gunmetal-61/projects/1) for a more accurate day-to-day view of current issues and features being worked on.
 
@@ -82,6 +84,11 @@ Please look at the [project board](https://github.com/users/Gunmetal-61/projects
 - 4x 10 KOhm In-Line Resistors (for pulldown purposes with the buttons)
 - 2x 100 nF Capacitors
 - 4x Pushbutton Switches
+
+- Tentative Component Additions (For Loudspeaker)
+  - [3W 4-Ohm 53x22mm Woofer Loudspeakers](https://www.amazon.com/gp/product/B07WZP4QFK/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
+  - [MAX98306 3.7W Class D Stereo Audio Amplifier](https://www.adafruit.com/product/987)
+  - [MCP3008 8-Channel 10-bit Discrete ADC](https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P/319422)
 
 ### Software
 
@@ -175,10 +182,14 @@ As the MKR Zero is all 3.3V logic, connect the wire which links 5V to the **disp
   - [Four Ways to Compute an Inverse FFT Using the Forward FFT Algorithm - Rick Lyons, DSPRelated](https://www.dsprelated.com/showarticle/800.php)
 - Digital Audio
   - [Digital Audio Basics: Audio Sample Rate and Bit Depth - Griffin Brown, iZotope](https://www.izotope.com/en/learn/digital-audio-basics-sample-rate-and-bit-depth.html)
+- Signal Filtering
+  - [Series on Filters: Low Pass Filters - ElectronicsTutorials](https://www.electronics-tutorials.ws/filter/filter_2.html)
+- On ADCs and DACs
+  - [Understanding Data Converters - Texas Instruments](https://www.ti.com/lit/an/slaa013/slaa013.pdf)
 
 ### Other
 - [Arduino MKR Vidor 4000](https://store.arduino.cc/usa/mkr-vidor-4000) - Another MKR-series board that looks very interesting as it also contains a Intel Cyclone 10CL016 FPGA to supplement the SAMD21 MCU, more I/O, and wireless radios.  I am considering switching to this board in the future for expansions of this project.
 
 <br />
 
-_Last Updated: 2021.07.04 23:18 PST_
+_Last Updated: 2021.07.14 18:39 PST_
